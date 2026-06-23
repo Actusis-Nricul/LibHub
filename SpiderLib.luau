@@ -153,7 +153,7 @@ function SpiderLib:win(title, icon)
         Size = UDim2.new(0, 24, 0, 24),
         Position = UDim2.new(1, -32, 0.5, -12),
         BackgroundTransparency = 1,
-        Text = "✕",
+        Text = "X",
         TextColor3 = Color3.fromRGB(220, 220, 230),
         Font = Enum.Font.GothamBold,
         TextSize = 13,
