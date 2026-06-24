@@ -1,4 +1,8 @@
-# **Spying Lib**
+# LibHub
+![image](assets/image1.png)
+
+
+## **Spying Lib**
 
 ```luau
 local SpyingLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/SpyingLib.luau'))()
@@ -20,7 +24,7 @@ MainTab:Dropdown("Mode", {"A", "B"}, "A", "settings", function(v) print(v) end)
 MainTab:Keybind("Toggle UI", "K", "key", function() print("pressed") end)
 ```
 
-# **Spider Lib**
+## **Spider Lib**
 
 ```luau
 local SpiderLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/SpiderLib.luau'))()
