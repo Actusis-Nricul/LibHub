@@ -1,5 +1,4 @@
 # LibHub
-![image](assets/image1.png)
 
 
 ## **Spying Lib**
@@ -44,4 +43,26 @@ MainTab:textbox("Name", "", "edit", function(t) print(t) end)
 MainTab:dropdown("Mode", {"A", "B"}, "A", "settings", function(v) print(v) end)
 
 MainTab:keybind("Toggle UI", "K", "key", function() print("pressed") end)
+```
+
+## **SyberLib**
+
+```luau
+local SyberLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/SyberLib.luau'))()
+
+local Window = SyberLib:MakeWindow({
+    Name = "SyberLib Demo",
+    Icon = "rbxassetid://8834748103",
+    IntroEnabled = true,
+    IntroText = "SyberLib",
+    SaveConfig = true,
+    ConfigFolder = "SyberLibDemo",
+    Theme = "Default", -- default, midnight, 
+})
+
+local Tab = Window:MakeTab({ Name = "Main", Icon = "settings" })
+
+Tab:AddButton({ Name = "Click Me", Callback = function() print("clicked") end })
+
+Tab:AddToggle({ Name = "Fly", Default = false, Flag = "FlyToggle1", Callback = function(v) print(v) end })
 ```
