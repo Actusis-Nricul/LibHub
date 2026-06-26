@@ -70,7 +70,7 @@ Tab:AddToggle({ Name = "Fly", Default = false, Flag = "FlyToggle1", Callback = f
 ## **OctillWare Lib**
 
 ```luau
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/you/repo/main/OctillWareLib.lua'))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/OctillWareLib.luau'))()
 
 local Window = Library:CreateWindow({ Title = "OctillWare", Center = true })
 local Tab = Window:AddTab("Main")
@@ -96,7 +96,7 @@ Library:SetTheme("Crimson")
 ## **Vrillix Lib**
 
 ```luau
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/you/repo/main/VrillixLib.lua'))()
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/VrillixLib.luau'))()
 
 local window = lib:Load({ name = "Vrillix", theme = "Dark" })
 local tab = window:Tab("Main")
