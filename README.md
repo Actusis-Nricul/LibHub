@@ -45,7 +45,7 @@ MainTab:dropdown("Mode", {"A", "B"}, "A", "settings", function(v) print(v) end)
 MainTab:keybind("Toggle UI", "K", "key", function() print("pressed") end)
 ```
 
-## **SyberLib**
+## **Syber Lib**
 
 ```luau
 local SyberLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Actusis-Nricul/LibHub/refs/heads/main/SyberLib.luau'))()
@@ -65,4 +65,46 @@ local Tab = Window:MakeTab({ Name = "Main", Icon = "settings" })
 Tab:AddButton({ Name = "Click Me", Callback = function() print("clicked") end })
 
 Tab:AddToggle({ Name = "Fly", Default = false, Flag = "FlyToggle1", Callback = function(v) print(v) end })
+```
+
+## **OctillWare Lib**
+
+```luau
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/you/repo/main/OctillWareLib.lua'))()
+
+local Window = Library:CreateWindow({ Title = "OctillWare", Center = true })
+local Tab = Window:AddTab("Main")
+local Box = Tab:AddLeftGroupbox("Player")
+
+Box:AddToggle("FlyToggle", {
+    Text = "Fly",
+    Default = false,
+    Callback = function(Value) print("Fly:", Value) end,
+})
+
+Box:AddSlider("SpeedSlider", {
+    Text = "WalkSpeed",
+    Default = 16, Min = 16, Max = 200, Rounding = 0,
+    Callback = function(Value) print("Speed:", Value) end,
+})
+
+Box:AddButton("Reset", function() print("clicked") end)
+
+Library:SetTheme("Crimson")
+```
+
+## **Vrillix Lib**
+
+```luau
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/you/repo/main/VrillixLib.lua'))()
+
+local window = lib:Load({ name = "Vrillix", theme = "Dark" })
+local tab = window:Tab("Main")
+local section = tab:Section({ name = "Player", column = 1 })
+
+section:Toggle({ name = "Fly", flag = "fly", callback = function(v) print("Fly:", v) end })
+section:Slider({ name = "Speed", min = 16, max = 200, default = 16, callback = function(v) print(v) end })
+section:Button({ name = "Click Me", callback = function() print("clicked") end })
+
+lib:Notify("Loaded", "VrillixLib loaded successfully", 4)
 ```
